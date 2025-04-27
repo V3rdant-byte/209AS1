@@ -19,8 +19,8 @@ public:
     branch_info bi;
 
 	// long and short branch history tables
-    int long_hist[LONG_HIST] = {};
-    int short_hist[SHORT_HIST] = {};
+    int8_t long_hist[LONG_HIST] = {};
+    int8_t short_hist[SHORT_HIST] = {};
 
 	// weight matrices for the long and short history tables
     int8_t table_long[1 << TABLE_BITS][LONG_HIST + 1] = {};
