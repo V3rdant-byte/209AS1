@@ -10,10 +10,10 @@ public:
 
 class my_predictor : public branch_predictor {
 public:
-    static constexpr int LONG_HIST = 48;
-    static constexpr int SHORT_HIST = 12;
+    static constexpr int LONG_HIST = 64;
+    static constexpr int SHORT_HIST = 8;
     static constexpr int TABLE_BITS = 10;
-    static constexpr int THRESHOLD = 90;
+    static constexpr int THRESHOLD = 137;
 
     my_update u;
     branch_info bi;
